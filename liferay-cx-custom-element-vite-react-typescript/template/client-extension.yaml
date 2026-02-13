@@ -1,0 +1,16 @@
+assemble:
+  - from: build/vite
+    into: static
+
+liferay-cx-custom-element:
+  type: customElement
+  name: Liferay CX Custom Element
+  friendlyURLMapping: liferay-cx-custom-element
+  htmlElementName: liferay-cx-custom-element
+  instanceable: false
+  properties: {}
+  urls:
+    - "**/*.js"
+  cssURLs:
+    - "**/*.css"
+  useESM: true
